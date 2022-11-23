@@ -42,3 +42,18 @@ Exemplo 02: git switch main
 ### Excluir uma branch
 git branch -D nome_da_branch_que_deseja_excluir
 Exemplo: git branch -D fix_botao_da_tela_login
+
+### Alterar o nome de uma Branch
+Primeiramente, precisa estar dentro da branch e depois usar o comando para renomear.
+git branch -m novo_nome_da_branch.
+
+### Trazer as alterações de uma BRANCH para a MAIN
+
+Primeiro, certifique-se que esta dentro da branch main. Se não estiver use: 
+git switch main.
+
+Segundo, verifique se a branch main esta atualizada com o comando:
+git pull origin main.
+
+Trazer os dados da branch para a main:
+git merge nome_da_branch.
